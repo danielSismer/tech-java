@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href = "style.css">
+    <title>Java Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body> 
-
-    <header> 
-        <div id = "headerMobile">
-            <img  id = "logo" src="/imagens/lg.jpg" alt="d"> 
-            <div class="menu-hamburguer"> <span></span> <span></span> <span></span> </div>
-        </div>
-    </header>
-    
-
-    <section>
-
-        <p id = "borda"> </p>
-
-        <div class="container">
-            <div class="texto-sobre-imagem">
-                <h1>Intelligence, security and Java in every solution.</h1>
-                <p>Robust architectures, clean code and scalable solutions with the power of Java.
-
-              </p>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-area">
+                <img id="logo" src="imagens/lg.jpg" alt="Logo Java">
+                <span class="site-title">Java Solutions</span>
             </div>
-          </div>
-
-    </section>
-
-    <section>
-
-
-        <p id = "destaque"> Highlights </p>
-
-        <div class = "cards"> 
-
-            <br>
-
-            
+            <div class="menu-hamburguer" tabindex="0" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="sobre">
+            <div class="container">
+                <div class="texto-sobre-imagem">
+                    <h1>Inteligência, segurança e Java em cada solução.</h1>
+                    <p>Arquiteturas robustas, código limpo e soluções escaláveis com o poder do Java.</p>
+                </div>
+            </div>
+        </section>
+        <section class="destaques" id="destaques">
+            <h2 id="destaque">Destaques</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagens/java.png" alt="Java Logo">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Aplicações modernas, seguras e performáticas usando Java.</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/log-oracle.png" alt="Banco de Dados Oracle">
+                    <h3>Integração com Banco de Dados</h3>
+                    <p>Conexão eficiente e segura com os principais bancos de dados.</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/logo-java.png" alt="Java Segurança">
+                    <h3>Segurança</h3>
+                    <p>Implementação de boas práticas e padrões de segurança em Java.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content" id="contato">
+            <p>&copy; 2024 Java Solutions. Todos os direitos reservados.</p>
         </div>
-
-    </section>
+    </footer>
 </body>
+</html>
 
 
 
